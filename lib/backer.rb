@@ -13,11 +13,7 @@ class Backer
 # Backer - backed_projects
 #   returns an array of projects associated with this Backer instance (FAILED - 9)
     def backed_projects
-        all_backers = ProjectBacker.all.select do |every| 
-            every.backer == self 
-        end
-        all_backers.map do |each|
-            each.project
-        end
+        all_backers = ProjectBacker.all.select { |every| every.backer == self }
+        all_backers.map { |each| each.project }
     end
 end
