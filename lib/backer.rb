@@ -1,3 +1,4 @@
+class Backer
 # Backer - ::new
 #   takes a name on initialization, accessible through an attribute reader (FAILED - 1)
 
@@ -6,3 +7,4 @@
 
 # Backer - backed_projects
 #   returns an array of projects associated with this Backer instance (FAILED - 9)
+end
